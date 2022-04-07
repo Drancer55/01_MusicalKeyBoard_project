@@ -1,6 +1,6 @@
 //Bienvenida
-let friend = prompt ("Para comenzar introduce tu nombre: ")
-alert ("Bienvenido " + friend + ", gracias por utilizar nuestra herramienta de aprendizaje musical. \nUiliza el boton derecho de tu mouse para tocar las notas musicales en pantalla o usa los botones especificados del teclado de tu computadora para emitir el sonido correspondiente.")
+let friend = prompt("Para comenzar introduce tu nombre: ")
+alert("Bienvenido " + friend + ", gracias por utilizar nuestra herramienta de aprendizaje musical. \nUiliza el boton izquierdo de tu mouse para tocar las notas musicales en pantalla o usa los botones especificados del teclado de tu computadora para emitir el sonido correspondiente.")
 
 //Login
 
@@ -44,7 +44,7 @@ document.addEventListener('keydown', e => {                         //keydow (al
     const key = e.key                                               //Corresponde a la letra en el computador con la nota descrita en el Array correspondiente a White note o black note
     const whiteKeyIndex = WHITE_KEYS.indexOf(key)                   //obtiene el index desde el array
     const blackKeyIndex = BLACK_KEYS.indexOf(key)
-    
+
     if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex])      //Determina exactamente la posición en el Index-array para ser ejecutada tomando en cuenta el nombre del keyboard asignado
     if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
     console.log(whiteKeys)
